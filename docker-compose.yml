@@ -1,0 +1,5 @@
+version: '3'
+services:
+  k6:
+    build:
+      context: .

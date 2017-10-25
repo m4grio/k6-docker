@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+COMMAND="docker run \
+    -it \
+    --rm \
+    --volume `pwd`:/opt/app"
+
+if [ -f `pwd`/.env ]; then
+    COMMAND="$COMMAND --env-file `pwd`/.env"
+fi
+
+COMMAND="$COMMAND k6docker_k6 k6 $@"
+
+eval $COMMAND
