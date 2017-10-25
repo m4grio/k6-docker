@@ -55,5 +55,9 @@ $ k6 run script.js --vus 10
 
 ```
 
+## Disclaimer
+
+This work is completely independent and not related in any way with Load Impact AB., authors of k6.
+
 ## Author
 - Written by Mario Álvarez <ahoy@m4grio.me>
