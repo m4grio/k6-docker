@@ -15,10 +15,6 @@ Successfully tagged k6docker_k6:latest
 
 Just use `k6` as you would normally do.
 
-### Configuration
-
-Use a `.env` file to set all the [environmental variables](https://docs.k6.io/docs/environment-variables) you may need.
-
 ```shell
 $ ls -a
 .      ..     .env   script.js
@@ -54,6 +50,10 @@ $ k6 run script.js --vus 10
     vus_max...............: 10    min=10 max=10
 
 ```
+
+### Configuration
+
+Use a `.env` file to set all the [environmental variables](https://docs.k6.io/docs/environment-variables) you may need.
 
 ## Disclaimer
 
