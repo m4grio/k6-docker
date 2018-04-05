@@ -1,5 +1,5 @@
 version: '3'
 services:
   k6:
-    build:
-      context: .
+    build: .
+    image: k6docker_k6
